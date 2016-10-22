@@ -1,5 +1,31 @@
-body {
-  background: black;
-  color: white;
+html ,body {
+    background: #b4bad2;
+    color: #fffce1;
+    font-weight: 400;
+    font-size: 1em;
+    font-family: 'Raleway', Arial, sans-serif;
+    box-sizing: border-box;
 }
 
+#container {
+      background: #373a47;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+}
+
+.nav_wrap {
+    position: absolute;
+    font-weight: 700;
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.nav_top {
+    line-height: 58px;
+}
+
+.nav_side{
+  width: 300px;
+}
