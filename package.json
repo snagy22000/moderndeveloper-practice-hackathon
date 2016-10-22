@@ -16,12 +16,13 @@
   "scripts": {
     "clean": "rimraf dist",
     "prebuild": "npm run clean -s && mkdir dist",
-    "build": "npm run build:styles -s && npm run build:markup -s",
-    "build:styles": "cp assets/styles/* dist/.",
-    "build:markup": "cp assets/markup/* dist/.",
-    "deploy": "gh-pages -d dist"
+    "build": "cp -r app/* dist/.",
+    "deploy": "gh-pages -d dist",
+    "serve": "node app.js"
   },
   "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "bs-html-injector": "^3.0.3",
     "gh-pages": "^0.11.0",
     "rimraf": "^2.5.4"
   }
