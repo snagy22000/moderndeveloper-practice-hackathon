@@ -13,7 +13,7 @@ $ npm install
 ### Development
 
 ```bash
-$ npm run serve
+$ npm run dev
 ```
 
 ### Production
