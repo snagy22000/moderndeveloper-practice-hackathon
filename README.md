@@ -4,10 +4,16 @@
 [![Stories in Ready](https://badge.waffle.io/stefanfrede/moderndeveloper-practice-hackathon.png?label=ready&title=Ready)](https://waffle.io/stefanfrede/moderndeveloper-practice-hackathon)
 
 
-### Development
+### Set-up
 
 ```bash
 $ npm install
+```
+
+### Development
+
+```bash
+$ npm run serve
 ```
 
 ### Production
