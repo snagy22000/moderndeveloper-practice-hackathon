@@ -1,0 +1,28 @@
+{
+  "name": "moderndeveloper-practice-hackathon",
+  "description": "Learn.Modern Developer Practice Hackathon",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Stefan Frede & Sebastian Nagy",
+  "homepage": "https://stefanfrede.github.io/moderndeveloper-practice-hackathon",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanfrede/moderndeveloper-practice-hackathon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stefanfrede/moderndeveloper-practice-hackathon/issues"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean -s && mkdir dist",
+    "build": "npm run build:styles -s && npm run build:markup -s",
+    "build:styles": "cp assets/styles/* dist/.",
+    "build:markup": "cp assets/markup/* dist/.",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.11.0",
+    "rimraf": "^2.5.4"
+  }
+}
